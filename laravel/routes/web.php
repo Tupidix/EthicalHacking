@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +29,13 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('/create-message', [MessageController::class, 'create'])->name('create-message');
     Route::post('/store-message', [MessageController::class, 'store'])->name('store-message');
+});
+
+Route::middleware(['auth'])->group(function () {
+    Route::prefix('admin')->group(function () {
+        Route::get('/', [AdminController::class, 'index'])->name('admin.index');
+        Route::put('/update-role/{userId}', [AdminController::class, 'updateRole'])->name('admin.updateRole');
+    });
 });
 
 require __DIR__.'/auth.php';
