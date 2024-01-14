@@ -102,4 +102,6 @@ Pour garantir la protection de données telles que les informations d'authentifi
 Le site permet de: Créer un compte, se connecter, se déconnecter. La page Chat permet de voir le message avec les rôles Lector, Editor et Admin. D'écrire des messages avec les rôles Editor et Admin.
 Puis de supprimer un message avec le rôle Admin. La page Admin (modificateur de rôle) n'est accessible qu'avec le rôle Admin et permet de changer le rôle des autres utilisateurs. Il n'est pas
 possible de modifier son propre rôle afin de ne pas se retirer le rôle admin à soit même par erreur et ne plus avoir accès à cette page.
--Comment mettre en place le projet pour le prof
+
+<h2>Pour toutes questions</h2>
+Contactez-nous $ l'adresse ryan.dorasamy@heig-vd.ch
