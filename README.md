@@ -111,4 +111,4 @@ Puis de supprimer un message avec le rôle Admin. La page Admin (modificateur de
 possible de modifier son propre rôle afin de ne pas se retirer le rôle admin à soit même par erreur et ne plus avoir accès à cette page.
 
 <h2>Pour toutes questions</h2>
-Contactez-nous $ l'adresse ryan.dorasamy@heig-vd.ch
+Contactez-nous si la marche à suivre n'a pas suffit à faire fonctionner le projet à l'adresse ryan.dorasamy@heig-vd.ch
