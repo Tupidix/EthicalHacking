@@ -28,7 +28,7 @@ MONGODB_URI=mongodb://localhost:27017
 MONGODB_NAME=Ethical-Hacking
 ```
 Maintenant nous allons exécuter les migrations 
-```
+``` et
 $ php artisan migrate:refresh
 ```
 Et pour finir nous allons lancer l'application
@@ -36,6 +36,8 @@ Et pour finir nous allons lancer l'application
 $ npm run build
 $ php artisan serve
 ```
+En haut à droite cliquez sur register et créer un utilisateur admin (par exemple admin@admin.ch) et choisissez un mot-de-passe. Ensuite, ouvrez mongoDBCompass et connectez vous à l'URI "mongodb://localhost:27017". À gauche, cliquez sur la DB Ethical-Hacking->users puis on hover sur votre utilisateur créée, vous pouvez modifier son rôle en "Admin" (avec un A majuscule).
+Vous pourrez ensuite facilement créer 4 autres utilisateurs possédant chacun un rôle ("Admin", "Editor", "Lector", "Guest" et par défaut "Disabled"). Vous pouvez désormais tester notre application.
 <h1>Rapport Projet Ethical Hacking</h1>
 
 <h2>Organisation</h2>
