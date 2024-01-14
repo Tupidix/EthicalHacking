@@ -1,5 +1,6 @@
 Ryan Dorasamy, Leo Chollet, Omar Gonin
 # Marche à suivre pour installation du projet : 
+# Pour Windows
 Vous aurez besoin de PHP, Git, Node.js, MongoDB et MongoDBcompass.
 
 Choisissez la bonne version du ddl : https://github.com/mongodb/mongo-php-driver/releases/
