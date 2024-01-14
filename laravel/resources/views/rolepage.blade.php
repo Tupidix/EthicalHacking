@@ -36,7 +36,9 @@
             <br/>
             <span>Compte crée le {{ date('Y-m-d', strtotime($user->created_at)) }}</span>
             <br/>
-            <span>{{ $user->role }}</span>
+            <select name="role">
+    <option value="admin" {{ $user->role === 'admin' ? 'selected' : '' }}>Admin</option>
+</select>
         </div>
         <br/>
     @endif

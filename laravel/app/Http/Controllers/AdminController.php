@@ -29,7 +29,6 @@ class AdminController extends Controller
         if (Auth::user()->role === 'Admin') {
             $user = User::findOrFail($userId);
             $user->update(['role' => $request->input('role')]);
-            $users = User::all();
 
             return Redirect::back()->with('success', 'Rôle mis à jour avec succès.');
         } else {
