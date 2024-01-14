@@ -1,7 +1,7 @@
 Ryan Dorasamy, Leo Chollet, Omar Gonin
 # Marche à suivre pour installation du projet : 
 Pour Windows:
-Vous aurez besoin de PHP, Git, Node.js, MongoDB et MongoDBcompass.
+Vous aurez besoin de PHP, Git, Node.js, Composer, MongoDB et MongoDBcompass.
 
 Choisissez la bonne version en fonction de votre version de PHP : https://github.com/mongodb/mongo-php-driver/releases/
 et mettez le fichier php_mongodb.dll dans le dossier C:\PHP\ext de votre installation de PHP
