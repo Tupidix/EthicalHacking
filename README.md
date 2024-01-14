@@ -40,7 +40,7 @@ Nous avons d'abord du nous mettre d'accord sur un framework à utiliser. Alors q
 de PHP Laravel nous faciliterais la tâche étant donné qu'il effectue diverses vérification et protocole de sécurité automatiquement. Nous nous sommes ensuite répartis les tâches.
 
 <h2>Librairies utilisées</h2>
-Nous avons utilisé Node.js v20.7.0, Laravel v10.x, Laravel Breeze (v1.27), Laravel-MongoDB (v4.1)
+Nous avons utilisé Node.js (v20.7.0), Laravel (v10.x), Laravel Breeze (v1.27), Laravel-MongoDB (v4.1), PHP (v8.2), Tailwind CSS (v3.1)
 
 <h2>Problèmes rencontrés</h2>
 
