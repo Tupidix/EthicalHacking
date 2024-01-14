@@ -12,8 +12,9 @@ class MessageController extends Controller
     public function index()
     {
         if (Auth::user()->role === 'Admin' || Auth::user()->role === 'Editor' || Auth::user()->role === 'Lector') {
+            $userRole = Auth::user()->role;
             $messages = Message::all();
-        return view('message', compact('messages'));
+        return view('message', compact('messages', 'userRole'));
         }
         else {
             abort(403, 'Vous n\'avez pas la permission d\'accéder à cette page.');
