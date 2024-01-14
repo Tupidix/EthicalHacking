@@ -3,13 +3,14 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use MongoDB\Laravel\Eloquent\Model;
 
 class Message extends Model
 {
     use HasFactory;
 
-    protected $table = 'messages';
+    protected  $connection = 'mongodb';
+    protected  $collection = 'messages';
 
     /**
      * The attributes that are mass assignable.
@@ -19,7 +20,7 @@ class Message extends Model
     protected $fillable = [
         'name',
         'message',
-        'user_id'
+        'userEmail'
     ];
 
     public function user()

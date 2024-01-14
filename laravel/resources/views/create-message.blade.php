@@ -19,7 +19,7 @@
                         <form action="{{ route('store-message') }}" method="POST">
                             @csrf
                             <div class="form-group">
-                                <label for="name">Name:</label>
+                                <label for="name">Title:</label>
                                 <input type="text" name="name" class="form-control" required>
                             </div>
 

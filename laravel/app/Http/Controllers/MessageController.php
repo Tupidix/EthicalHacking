@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Message;
+use Illuminate\Support\Facades\Auth;
 
 
 class MessageController extends Controller
@@ -25,9 +27,10 @@ class MessageController extends Controller
         ]);
     
         // Use the authenticated user's ID directly
-        auth()->user()->messages()->create([
+        Message::create([
             'name' => $request->input('name'),
             'message' => $request->input('message'),
+            'userEmail' => Auth::user()->email,
         ]);
     
         return redirect()->route('create-message')->with('success', 'Message created successfully!');
