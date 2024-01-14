@@ -15,8 +15,9 @@ class AdminController extends Controller
         if (Auth::user()->role === 'Admin') {
             $users = User::all();
             $roles = ['Admin', 'Editor', 'Lector', 'Guest', 'Disabled'];
+            $connectedUserEmail = Auth::user()->email;
 
-            return view('rolepage', compact('users', 'roles'));
+            return view('rolepage', compact('users', 'roles', 'connectedUserEmail'));
         } else {
             abort(403, 'Vous n\'avez pas la permission d\'accéder à cette page.');
         }
@@ -28,7 +29,6 @@ class AdminController extends Controller
         if (Auth::user()->role === 'Admin') {
             $user = User::findOrFail($userId);
             $user->update(['role' => $request->input('role')]);
-            $users = User::all();
 
             return Redirect::back()->with('success', 'Rôle mis à jour avec succès.');
         } else {
