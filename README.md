@@ -4,12 +4,12 @@ Pour Windows:
 Vous aurez besoin de PHP, Git, Node.js, MongoDB et MongoDBcompass.
 
 Choisissez la bonne version en fonction de votre version de PHP : https://github.com/mongodb/mongo-php-driver/releases/
-et mettez le fichier .dll dans le dossier C:\PHP\ext de votre installation de PHP
+et mettez le fichier php_mongodb.dll dans le dossier C:\PHP\ext de votre installation de PHP
 Avant de cloner le projet nous allons modifier notre fichier php.ini
 ```
 $ php.ini
 ```
-Recherchez la liste des extensions et coller cette ligne
+En dessous de la ligne 946, ajoutez cette ligne.
 ```
 extension=php_mongodb.dll
 ```
