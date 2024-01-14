@@ -4,7 +4,7 @@ Choisissez la bonne version du ddl : https://github.com/mongodb/mongo-php-driver
 et mettez le dans le dossier C:\PHP\ext de votre installation de PHP
 Avant de cloner le projet nous allons modifier notre fichier php.ini
 ```
-$ php --ini
+php.ini
 ```
 Recherchez la liste des etensions et coller cette ligne
 ```
