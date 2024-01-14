@@ -21,7 +21,7 @@ $ npm i
 
 Maintenant nous allons exécuter les migrations 
 ```
-$ php artisan migrate:refresh --seed
+$ php artisan migrate:refresh
 ```
 Et pour finir nous allons lancer l'application
 ```
