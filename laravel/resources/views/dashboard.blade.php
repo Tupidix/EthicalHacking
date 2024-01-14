@@ -4,6 +4,5 @@
             {{ __('Dashboard') }}
         </h2>
         <a href="{{ route('create-message') }}" class="btn btn-primary">Create Message</a>
-        <a href="{{ route('messages') }}" class="btn btn-primary">View Messages</a>
     </x-slot>
 </x-app-layout>
