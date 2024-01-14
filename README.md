@@ -3,8 +3,8 @@ Ryan Dorasamy, Leo Chollet, Omar Gonin
 Pour Windows:
 Vous aurez besoin de PHP, Git, Node.js, MongoDB et MongoDBcompass.
 
-Choisissez la bonne version du ddl : https://github.com/mongodb/mongo-php-driver/releases/
-et mettez le dans le dossier C:\PHP\ext de votre installation de PHP
+Choisissez la bonne version en fonction de votre version de PHP : https://github.com/mongodb/mongo-php-driver/releases/
+et mettez le fichier .dll dans le dossier C:\PHP\ext de votre installation de PHP
 Avant de cloner le projet nous allons modifier notre fichier php.ini
 ```
 $ php.ini
