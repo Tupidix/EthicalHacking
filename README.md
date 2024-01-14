@@ -1,5 +1,7 @@
 Ryan Dorasamy, Leo Chollet, Omar Gonin
 # Marche à suivre pour installation du projet : 
+Choisissez la bonne version du ddl : https://github.com/mongodb/mongo-php-driver/releases/
+et mettez le dans le dossier C:\PHP\ext de votre installation de PHP
 Avant de cloner le projet nous allons modifier notre fichier php.ini
 ```
 $ php --ini
