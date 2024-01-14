@@ -18,7 +18,12 @@ $ cd laravel
 $ composer i
 $ npm i
 ```
-
+Dans le fichier .env, remplacer les lignes 11-16 par
+```
+DB_CONNECTION=mongodb
+MONGODB_URI=mongodb://localhost:27017
+MONGODB_NAME=Ethical-Hacking
+```
 Maintenant nous allons exécuter les migrations 
 ```
 $ php artisan migrate:refresh
