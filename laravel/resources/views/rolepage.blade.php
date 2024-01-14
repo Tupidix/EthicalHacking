@@ -14,6 +14,8 @@
     @if($user->email !== $connectedUserEmail)
         <div>
             <span>{{ $user->email }}</span>
+            <br/>
+            <span>Compte crée le {{ date('Y-m-d', strtotime($user->created_at)) }}</span>
             <form method="POST" action="{{ route('admin.updateRole', $user->id) }}">
                 @csrf
                 @method('PUT')
@@ -31,6 +33,8 @@
     @else
     <div>
             <span>{{ $user->email }}</span>
+            <br/>
+            <span>Compte crée le {{ date('Y-m-d', strtotime($user->created_at)) }}</span>
             <br/>
             <span>{{ $user->role }}</span>
         </div>
