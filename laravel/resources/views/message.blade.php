@@ -13,14 +13,15 @@
                         <p class="font-bold">Succès</p>
                         <p>{{ session('success') }}</p>
                     </div>
+                    <br/>
                 @endif
-<br/>
 @if ($userRole === 'Admin' || $userRole === 'Editor')
-<a href="{{ route('create-message') }}" class="btn btn-primary">Create Message</a>
+<a href="{{ route('create-message') }}"><button class="text-green-500">Create Message</button></a>
+<br/>
 <br/>
 @endif
 @foreach($messages as $message)
-    <div>
+    <div class="bg-grey-100 border-l-4 border-black-500 text-black-500 p-4">
         <span>{{ $message->userEmail }}</span>
         <br/>
         <span>{{ $message->name }}</span>
@@ -33,7 +34,7 @@
         <form action="{{ route('messages.destroy', ['id' => $message->id]) }}" method="POST">
             @csrf
             @method('DELETE')
-            <button type="submit">Supprimer</button>
+            <button type="submit" class="text-red-500">Delete Message</button>
         </form>
         @endif
     </div>
