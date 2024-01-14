@@ -7,7 +7,7 @@ de PHP Laravel nous faciliterais la tâche étant donné qu'il effectue diverses
 <h2>Librairies utilisées</h2>
 Nous avons utilisé Node.js v20.7.0, Laravel v10.x
 <h2>Problèmes rencontrés</h2>
-Comme cela fait presque 1 an que nous n'avons pas utilisé de PHP et Laravel, nous avons dû nous rappeler de comment fonctionne ce code. Nous avons rencontrés quelques problème mineurs
+Comme cela fait presque 1 an que nous n'avons pas utilisé de PHP et Laravel, nous avons dû nous rappeler de comment fonctionne ce code. Nous avons rencontrés quelques problème mineurs. Ils ont soit étés réglés en cherchant sur le web, soit en demandant à chatGPT soit en demandant de l'aide à d'autres élèves.
 <h2>Sécurités mises en place</h2>
 Comme dit précédemment, Laravel met en place diverses sécurité automatiquement. On y retrouve par exemple:...
 – Votre approche pour identifier des faiblesses logicielles potentielles à la fin de votre projet.
