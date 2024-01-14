@@ -13,7 +13,7 @@ Recherchez la liste des extensions et coller cette ligne
 extension=php_mongodb.dll
 ```
 
-Pour installer l'application exécuter ces lignes de commandes
+Pour installer l'application exécutez ces lignes de commandes
 ```
 $ git clone https://github.com/Tupidix/EthicalHacking.git
 $ cd laravel
