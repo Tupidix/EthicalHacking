@@ -10,11 +10,13 @@
                     <div class="card-header">Create a New Message</div>
 
                     <div class="card-body">
-                        @if(session('success'))
-                            <div class="alert alert-success">
-                                {{ session('success') }}
-                            </div>
-                        @endif
+                    @if (session('success'))
+                    <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4" role="alert">
+                        <p class="font-bold">Succès</p>
+                        <p>{{ session('success') }}</p>
+                    </div>
+                @endif
+                        
 
                         <form action="{{ route('store-message') }}" method="POST">
                             @csrf

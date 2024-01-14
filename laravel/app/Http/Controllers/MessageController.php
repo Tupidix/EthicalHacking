@@ -47,4 +47,20 @@ class MessageController extends Controller
     
         return redirect()->route('create-message')->with('success', 'Message created successfully!');
     }
+
+    public function destroy($id)
+    {
+        if(Auth::user()->role === 'Admin'){
+        // Récupérez le message à supprimer
+        $message = Message::findOrFail($id);
+
+        // Supprimez le message
+        $message->delete();
+
+        // Redirigez avec un message de succès
+        return redirect()->route('message')->with('success', 'Message deleted successfully!');
+    } else {
+        abort(403, 'Vous n\'avez pas la permission d\'effectuer cette action');
+    }
+    }
 }

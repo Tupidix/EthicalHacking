@@ -31,6 +31,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/create-message', [MessageController::class, 'create'])->name('create-message');
     Route::get('/message', [MessageController::class, 'index'])->name('message');
     Route::post('/store-message', [MessageController::class, 'store'])->name('store-message');
+    Route::delete('/messages/{id}', [MessageController::class, 'destroy'])->name('messages.destroy');
 });
 
 Route::middleware(['auth'])->group(function () {
