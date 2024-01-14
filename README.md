@@ -1,5 +1,33 @@
 Ryan Dorasamy, Leo Chollet, Omar Gonin
+# Marche à suivre pour installation du projet : 
+Choisissez la bonne version du ddl : https://github.com/mongodb/mongo-php-driver/releases/
+et mettez le dans le dossier C:\PHP\ext de votre installation de PHP
+Avant de cloner le projet nous allons modifier notre fichier php.ini
+```
+$ php --ini
+```
+Recherchez la liste des etensions et coller cette ligne
+```
+extension=php_mongodb.dll
+```
 
+Pour installer l'application exécuter ces lignes de commandes
+```
+$ git clone https://github.com/Tupidix/EthicalHacking.git
+$ cd laravel
+$ composer i
+$ npm i
+```
+
+Maintenant nous allons exécuter les migrations 
+```
+$ php artisan migrate:refresh --seed
+```
+Et pour finir nous allons lancer l'application
+```
+$ npm run build
+$ php artisan serve
+```
 <h1>Rapport Projet Ethical Hacking</h1>
 
 <h2>Organisation</h2>
@@ -7,10 +35,15 @@ Nous avons d'abord du nous mettre d'accord sur un framework à utiliser. Alors q
 de PHP Laravel nous faciliterais la tâche étant donné qu'il effectue diverses vérification et protocole de sécurité automatiquement. Nous nous sommes ensuite répartis les tâches.
 
 <h2>Librairies utilisées</h2>
-Nous avons utilisé Node.js v20.7.0, Laravel v10.x
+Nous avons utilisé Node.js v20.7.0, Laravel v10.x, Laravel Breeze (v1.27), Laravel-MongoDB (v4.1)
 
 <h2>Problèmes rencontrés</h2>
+
+**Se replonger dans Laravel**\
 Comme cela fait presque 1 an que nous n'avons pas utilisé de PHP et Laravel, nous avons dû nous rappeler de comment fonctionne ce code. Nous avons rencontrés quelques problème mineurs. Ils ont soit étés réglés en cherchant sur le web, soit en demandant à chatGPT soit en demandant de l'aide à d'autres élèves.
+
+**Intégration de mangoBD**\
+l'intégration de Laravel avec MongoDB a présenté quelques défis qui ont nécessité des ajustements spécifiques pour assurer une collaboration harmonieuse entre le framework et la base de données NoSQL. Laravel, par défaut, est orienté vers l'utilisation de bases de données relationnelles, tandis que MongoDB est une base de données NoSQL orientée document. Nous avons dû effectuer quelques modifications spécifiques pour permettre à Laravel de tirer pleinement parti des fonctionnalités offertes par MongoDB. 
 
 <h2>Sécurités mises en place</h2>
 
