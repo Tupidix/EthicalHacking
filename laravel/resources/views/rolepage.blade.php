@@ -2,6 +2,7 @@
 
 @section('content')
     <h2>Page d'administration des rôles</h2>
+    <br/>
     @if (session('success'))
                     <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4" role="alert">
                         <p class="font-bold">Succès</p>
@@ -10,6 +11,7 @@
                 @endif
 
     @foreach($users as $user)
+    @if($user->email !== $connectedUserEmail)
         <div>
             <span>{{ $user->email }}</span>
             <form method="POST" action="{{ route('admin.updateRole', $user->id) }}">
@@ -25,5 +27,14 @@
                 <button type="submit">Mettre à jour le rôle</button>
             </form>
         </div>
+        <br/>
+    @else
+    <div>
+            <span>{{ $user->email }}</span>
+            <br/>
+            <span>{{ $user->role }}</span>
+        </div>
+        <br/>
+    @endif
     @endforeach
 @endsection
