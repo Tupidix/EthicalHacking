@@ -113,5 +113,8 @@ Le site permet de: Créer un compte, se connecter, se déconnecter. La page Chat
 Puis de supprimer un message avec le rôle Admin. La page Admin (modificateur de rôle) n'est accessible qu'avec le rôle Admin et permet de changer le rôle des autres utilisateurs. Il n'est pas
 possible de modifier son propre rôle afin de ne pas se retirer le rôle admin à soit même par erreur et ne plus avoir accès à cette page.
 
+<h2>Fonctionnalités non implémentées</h2>
+-gestionnaire de partage de fichiers
+
 <h2>Pour toutes questions</h2>
 Contactez-nous si la marche à suivre n'a pas suffit à faire fonctionner le projet à l'adresse ryan.dorasamy@heig-vd.ch
