@@ -1,4 +1,8 @@
 Ryan Dorasamy, Leo Chollet, Omar Gonin
+
+<h2>Librairies utilisées</h2>
+Nous avons utilisé Node.js (v20.7.0), Laravel (v10.x), Laravel Breeze (v1.27), Laravel-MongoDB (v4.1), PHP (v8.2), Tailwind CSS (v3.1)
+
 # Marche à suivre pour installation du projet : 
 Pour Windows:
 Vous aurez besoin de PHP, Git, Node.js, Composer, MongoDB et MongoDBcompass.
@@ -43,9 +47,6 @@ Vous pourrez ensuite facilement créer 4 autres utilisateurs possédant chacun u
 <h2>Organisation</h2>
 Nous avons d'abord du nous mettre d'accord sur un framework à utiliser. Alors que 2 d'entre nous étions initialement pourl'utilisation de vue.js, Ryan a mis en avant le fait que l'utilisation
 de PHP Laravel nous faciliterais la tâche étant donné qu'il effectue diverses vérification et protocole de sécurité automatiquement. Nous nous sommes ensuite répartis les tâches.
-
-<h2>Librairies utilisées</h2>
-Nous avons utilisé Node.js (v20.7.0), Laravel (v10.x), Laravel Breeze (v1.27), Laravel-MongoDB (v4.1), PHP (v8.2), Tailwind CSS (v3.1)
 
 <h2>Problèmes rencontrés</h2>
 
